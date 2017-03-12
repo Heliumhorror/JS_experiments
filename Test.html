@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=540, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TestScript</title>
+    <script type="text/javascript">
+    console.log(document.implementation)
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    body {
+        margin: 0;
+        background-color: red;
+    }
+    
+    #button {
+        width: 150px;
+        height: 50px;
+        color: #eeeeee;
+        background-color: #cccccc;
+    }
+    
+    #container {
+        width: 300px;
+        height: 250px;
+        color: #5B5B5B;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        position: absolute;
+        font-weight: 400;
+    }
+    </style>
+</head>
+
+<body onload="init();">
+    <div id="button"></div>
+    <div id="container"></div>
+    <script type="text/javascript">
+    function init() {
+        //console.log("inited!");
+
+        var c = document.getElementById("container");
+        c.innerHTML = "intited!!!"
+        //document.write(Date());
+    }
+
+    </script>
+</body>
+
+</html>

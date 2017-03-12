@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=540, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TestScript</title>
+    <script type="text/javascript">
+        console.log(document.implementation)
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+    <style type="text/css" media="screen">
+        body {
+            margin: 0;
+        }
+        
+        #container {
+            width: 300px;
+            height: 250px;
+            color: #5B5B5B;
+            background-color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;
+            position: absolute;
+            font-weight: 400;
+        }
+    </style>
+    <script language="JavaScript">
+        function init() {
+            var container = document.getElementById('container');
+            blocker.style.width = container.offsetWidth + 'px';
+            if (!adl) {
+                if (Enabler.isInitialized()) {
+                    enablerInitHandler();
+                } else {
+                    Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
+                }
+            }
+        }
+    </script>
+</head>
+
+<body onload="init();">
+
+    <script type="text/javascript">
+        // console.log(document.implementation)
+        document.write(Date());
+    </script>
+
+
+
+    <div id="container" class="templat">
+
+    </div>
+
+
+</body>
+
+</html>
